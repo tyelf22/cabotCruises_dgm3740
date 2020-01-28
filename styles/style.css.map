@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,MAAM,CAAC,GAAG,CAAC;EACP,MAAM,EAAE,IAAI;CACf;;ADMD,AAAA,QAAQ,CAAC;EACL,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "style.scss",
+        "_header.scss",
+        "_nav.scss",
+        "_jumbo.scss",
+        "_blogs.scss",
+        "_footer.scss",
+        "_socials.scss",
+        "_myInfo.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
