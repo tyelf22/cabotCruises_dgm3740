@@ -1,0 +1,24 @@
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .article {
+        height: 30rem;
+        width: 30rem;
+        background-color: #ccc;
+        margin: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+
+        .articleTitle {
+            margin-bottom: 0.5rem;
+        }
+
+        .date {
+            background-color: #3F4448;
+        }
+    }
+} 

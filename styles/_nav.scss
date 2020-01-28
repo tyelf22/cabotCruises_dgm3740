@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    background: #ccc;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        align-self: center;
+        
+        li {
+            padding: 0 1rem;
+        }
+    }
+
+    input {
+        margin-left: auto;
+        padding: 1rem;
+    }
+}

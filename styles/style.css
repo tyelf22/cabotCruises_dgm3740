@@ -1,5 +1,107 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header img {
   height: 80px;
+}
+
+header a {
+  margin-left: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ccc;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+nav ul li {
+  padding: 0 1rem;
+}
+
+nav input {
+  margin-left: auto;
+  padding: 1rem;
+}
+
+main {
+  background-color: #ccc;
+  height: 40rem;
+  margin-top: 2rem;
+}
+
+.articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.articles .article {
+  height: 30rem;
+  width: 30rem;
+  background-color: #ccc;
+  margin: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.articles .article .articleTitle {
+  margin-bottom: 0.5rem;
+}
+
+.articles .article .date {
+  background-color: #3F4448;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
