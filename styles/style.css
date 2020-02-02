@@ -62,7 +62,7 @@ main {
   width: 30rem;
   background-color: #ccc;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,6 +90,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 2rem;
 }
 
 footer .contact {
