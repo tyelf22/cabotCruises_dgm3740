@@ -1,7 +1,18 @@
 footer {
     display: flex;
     justify-content: space-between;
-    
 
+    .contact {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .news {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    .why {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
     
 }
