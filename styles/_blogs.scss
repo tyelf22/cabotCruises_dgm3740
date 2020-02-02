@@ -1,25 +1,30 @@
-.articles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.blog {
+    margin-top: $sectionTop;
 
-    .article {
-        height: 30rem;
-        width: 30rem;
-        background-color: #ccc;
-        margin: auto;
-        margin-top: $sectionTop;
+    .articles {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        
+        flex-direction: row;
+        flex-wrap: wrap;
 
-        .articleTitle {
-            margin-bottom: 0.5rem;
-        }
+        .article {
+            height: 30rem;
+            width: 30rem;
+            background-color: #ccc;
+            margin: auto;
+            margin-top: $sectionTop;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
 
-        .date {
-            background-color: #3F4448;
+            .articleTitle {
+                margin-bottom: 0.5rem;
+            }
+
+            .date {
+                background-color: #3F4448;
+            }
         }
-    }
-} 
+    } 
+
+}

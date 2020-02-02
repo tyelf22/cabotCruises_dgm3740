@@ -1,6 +1,8 @@
 nav {
     display: flex;
     background: #ccc;
+    margin: 0px -2000px;
+    padding: 0px 2000px;
 
     ul {
         display: flex;
@@ -8,12 +10,13 @@ nav {
         align-self: center;
         
         li {
-            padding: 0 1rem;
+            padding-right: 1rem;
         }
     }
 
     input {
+        margin: 0.5rem 0;
         margin-left: auto;
-        padding: 1rem;
+        padding: 0.7rem 0;
     }
 }
