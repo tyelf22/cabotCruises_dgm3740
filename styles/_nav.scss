@@ -8,15 +8,20 @@ nav {
         display: flex;
         list-style-type: none;
         align-self: center;
+        padding: $paddingFix;
         
         li {
             padding-right: 1rem;
         }
     }
 
-    input {
-        margin: 0.5rem 0;
+    div {
         margin-left: auto;
-        padding: 0.7rem 0;
+        padding: $paddingFix;
+
+        input {
+            margin: 0.5rem 0;
+            padding: 0.7rem 0;
+        }
     }
 }

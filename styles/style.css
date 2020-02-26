@@ -1,4 +1,5 @@
 header {
+  padding: 0 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,15 +31,20 @@ nav ul {
   list-style-type: none;
   -ms-flex-item-align: center;
       align-self: center;
+  padding: 0 2rem;
 }
 
 nav ul li {
   padding-right: 1rem;
 }
 
-nav input {
-  margin: 0.5rem 0;
+nav div {
   margin-left: auto;
+  padding: 0 2rem;
+}
+
+nav div input {
+  margin: 0.5rem 0;
   padding: 0.7rem 0;
 }
 
@@ -91,37 +97,52 @@ main {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background-color: #ccc;
+  margin: 2rem -2000px;
+  padding: 0px 2000px;
+}
+
+footer .footWrapper {
   margin-top: 2rem;
+  padding: 0 2rem;
 }
 
-footer .contact {
+footer .footWrapper .contact {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 1rem .5rem;
 }
 
-footer .news {
+footer .footWrapper .news {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 1rem .5rem;
 }
 
-footer .why {
+footer .footWrapper .why {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 1rem .5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  footer .footWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .socials {
@@ -175,6 +196,7 @@ html {
 body {
   font-size: 1.6rem;
   overflow-x: hidden;
+  width: 100%;
 }
 
 * {
@@ -183,6 +205,7 @@ body {
 }
 
 .wrapper {
-  margin: 0 3rem;
+  margin: 0 auto;
+  max-width: 96rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,44 @@
 footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: $sectionTop;
+    background-color: #ccc;
+    margin: 2rem -2000px;
+    padding: 0px 2000px;
 
-    .contact {
-        flex-basis: 0;
-        flex-grow: 1;
+    .footWrapper {
+        margin-top: $sectionTop;
+        padding: $paddingFix;
+        
+
+        .contact {
+            flex-basis: 0;
+            flex-grow: 1;
+            padding: 1rem .5rem;
+        }
+        .news {
+            flex-basis: 0;
+            flex-grow: 1;
+            padding: 1rem .5rem;
+        }
+        .why {
+            flex-basis: 0;
+            flex-grow: 1;
+            padding: 1rem .5rem;
+        }
     }
-    .news {
-        flex-basis: 0;
-        flex-grow: 1;
-    }
-    .why {
-        flex-basis: 0;
-        flex-grow: 1;
-    }
+
+
     
 }
+
+
+@media only screen and (min-width: 600px) {
+    footer {
+    
+        .footWrapper {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+    
+        
+    }
+  }
