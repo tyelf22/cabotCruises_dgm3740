@@ -1,5 +1,8 @@
 .blog {
     margin-top: $sectionTop;
+    h2 {
+        padding: $paddingFix;
+    }
 
     .articles {
         display: flex;
@@ -9,21 +12,69 @@
         .article {
             height: 30rem;
             width: 30rem;
-            background-color: #ccc;
             margin: auto;
             margin-top: $sectionTop;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
-            
+            justify-content: space-between;
 
             .articleTitle {
-                margin-bottom: 0.5rem;
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 1rem;
+                text-align: center;
+                color: white;
             }
 
             .date {
-                background-color: #3F4448;
+                background-color: rgba(0, 0, 0, 0.8);
+                padding: 0.5rem;
+                text-align: center;
+                color: white;
             }
+        }
+
+        .dining {
+            background-image: url(../images/blogPics/cabotDining1.png);
+            opacity: 75%;
+            transition: opacity .25s ease-in-out;
+        }
+
+        .beach {
+            background-image: url(../images/blogPics/cabotBeaches1.png);
+            opacity: 75%;
+            transition: opacity .25s ease-in-out;
+        }
+
+        .slide {
+            background-image: url(../images/blogPics/cabotWaterSlide1.png);
+            opacity: 75%;
+            transition: opacity .25s ease-in-out;
+        }
+
+        .para{
+            background-image: url(../images/blogPics/cabotParagliding1.png);
+            opacity: 75%;
+            transition: opacity .25s ease-in-out;
+        }
+
+        .para:hover {
+            
+            opacity: 100%;
+        }
+
+        .dining:hover {
+            
+            opacity: 100%;
+        }
+
+        .beach:hover {
+           
+            opacity: 100%;
+        }
+
+        .slide:hover {
+            
+            opacity: 100%;
         }
     } 
 

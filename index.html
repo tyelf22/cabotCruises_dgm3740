@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cabot Cruises</title>
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,63 +17,85 @@
         <!-- header -->
         <header>
             <h1>Cabot<br><span>Cruises</span></h1>
-            <img src="./images/cabotCruisesLogo1x.png" srcset="./images/cabotCruisesLogo1x.png 1x, ./images/cabotCruisesLogo2x.png 2x, ./images/cabotCruisesLogo3x.png 3x" alt="Cabot cruises logo">
+            <img src="./images/newcabotCruisesLogo1x.png" srcset="./images/newcabotCruisesLogo1x.png 1x, ./images/newcabotCruisesLogo2x.png 2x, ./images/newcabotCruisesLogo3x.png 3x" alt="Cabot cruises logo">
             <a href="tel:555-555-5555">555-555-5555</a>
         </header>
         <!-- nav -->
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Cruises</li>
-                <li>Agents</li>
-                <li>Book</li>
+        <nav class="clearfix">
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav" class="closed">
+                <li class="active"><a>Home</a></li>
+                <li><a href="#">Cruises</a></li>
+                <li><a href="#">Agents</a>
+                    <ul>
+                        <li><a href="#">View Agents</a></li>
+                        <li><a href="#">Contact Agents</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Book</a></li>
             </ul>
-            <div>
+            <form action="">
                 <input type="search" placeholder="Search..." name="search">
-            </div>
+                <button id="search" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
         </nav>
         <!-- jumbo -->
-        <main>
-
+        <main class="mySlider">
+            <picture>
+                <source srcset="./images/sliders/cabot1Wide.png" media="(min-width: 46.8rem)">
+                <img src="./images/sliders/cabot1Square.png" alt="cabot cruises ship">
+            </picture>
+            <picture>
+                <source srcset="./images/sliders/cabot2Wide.png" media="(min-width: 46.8rem)">
+                <img src="./images/sliders/cabot2Square.png" alt="cabot cruises ship">
+            </picture>
+            <picture>
+                <source srcset="./images/sliders/cabot3Wide.png" media="(min-width: 46.8rem)">
+                <img src="./images/sliders/cabot3Square.png" alt="cabot cruises ship">
+            </picture>
+            <picture>
+                <source srcset="./images/sliders/cabot4Wide.png" media="(min-width: 46.8rem)">
+                <img src="./images/sliders/cabot4Square.png" alt="cabot cruises ship">
+            </picture>
         </main>
         <!-- blogs -->
         <section class="blog">
             <h2>Recent Blog Articles</h2>
             <div class="articles">
-                <div class="article">
+                <div class="article dining">
                     <div class="articleTitle">
-                        <p>Article Title Goes Here and may wrap
-                            to two lines.
+                        <p>
+                            Dining
                         </p>
                     </div>
                     <div class="date">
                         <p>May 1, 2018</p>
                     </div>
                 </div>
-                <div class="article">
+                <div class="article para">
                     <div class="articleTitle">
-                    <p>Article Title Goes Here and may wrap
-                        to two lines.
+                    <p>
+                        Paragliding
                     </p>
                     </div>
                     <div class="date">
                         <p>May 1, 2018</p>
                     </div>
                 </div>
-                <div class="article">
+                <div class="article slide">
                     <div class="articleTitle">
-                    <p>Article Title Goes Here and may wrap
-                        to two lines.
+                    <p>
+                        Water Slides
                     </p>
                     </div>
                     <div class="date">
                         <p>May 1, 2018</p>
                     </div>
                 </div>
-                <div class="article">
+                <div class="article beach">
                     <div class="articleTitle">
-                    <p>Article Title Goes Here and may wrap
-                        to two lines.
+                    <p>Beaches
                     </p>
                     </div>
                     <div class="date">
@@ -86,13 +110,17 @@
                 <div class="contact">
                     <h2>Contact Us</h2>
                     <p>
-                        Cabot Cruizes <br>
-                        23 South Main St. Suite 16 <br>
-                        Lexington, VA 24450
+                        <a href="https://goo.gl/maps/ro2NGJ2Yy4sc5ZPk6">
+                            Cabot Cruises <br>
+                            23 South Main St. Suite 16 <br>
+                            Lexington, VA 24450
+                        </a>
                     </p>
                     <p>
-                        Phone: <br>
-                        1-800-555-1234
+                        <a href="tel:555-555-5555">
+                            Phone: <br>
+                            555-555-5555
+                        </a>
                     </p>
                     <p>
                         Hours of Operation: <br>
@@ -100,12 +128,15 @@
                     </p>
                 </div>
                 <div class="news">
-                    <h2>News Letter</h2>
+                    <h2>Newsletter</h2>
                     <p>Subscribe to our email list and stay up-to-date with 
                         our hottest offers and latest specials.
                     </p>
-                    <input type="text" placeholder="Email...">
-                    <button class="subscribe"> Subscribe </button>
+                    <form action="">
+                        <input type="text" placeholder="Email..." required>
+                        <button type="submit" class="subscribe"> Subscribe </button>
+                    </form>
+                   
                 </div>
                 <div class="why">
                     <h2>Why Cabot Cruises</h2>
@@ -125,9 +156,25 @@
         </div>
         <!-- myInfo -->
         <div class="myInfo">
-            <p>&copy; 201x Tyson Elfors &#9679 tysonelfors.com </p>
+            <p>&copy; Tyson Elfors &#9679 tysonelfors.com </p>
 
         </div>
     </div>
+    <script src="./menuToggle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $('.mySlider').slick({
+                autoplay: true,
+                dots: true,
+                arrows: false,
+                cssEase: 'ease-out',
+                speed: 2000,
+                autoplaySpeed: 5000
+            })
+        })
+    </script>
 </body>
 </html>

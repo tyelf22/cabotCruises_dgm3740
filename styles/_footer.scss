@@ -1,7 +1,8 @@
 footer {
-    background-color: #ccc;
+    background-color: #2E9BAF;
     margin: 2rem -2000px;
     padding: 0px 2000px;
+    color: white;
 
     .footWrapper {
         margin-top: $sectionTop;
@@ -23,6 +24,31 @@ footer {
             flex-grow: 1;
             padding: 1rem .5rem;
         }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    input {
+        margin: 0.5rem 0;
+        padding: 0.8rem 0;
+        border: none;
+        
+    }
+
+    button {
+        display: block;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: solid 1px rgba(0, 0, 0, 0.3);
+        width: 17.5rem;
+        border-radius: 5px;
+        padding: 0.5rem;
+        cursor: pointer;
     }
 
 
@@ -41,4 +67,4 @@ footer {
     
         
     }
-  }
+}
