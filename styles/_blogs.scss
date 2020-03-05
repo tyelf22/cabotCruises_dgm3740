@@ -10,13 +10,14 @@
         flex-wrap: wrap;
 
         .article {
-            height: 30rem;
-            width: 30rem;
+            height: 20rem;
+            width: 20rem;
             margin: auto;
             margin-top: $sectionTop;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            
 
             .articleTitle {
                 background-color: rgba(0, 0, 0, 0.8);
@@ -35,24 +36,28 @@
 
         .dining {
             background-image: url(../images/blogPics/cabotDining1.png);
+            background-position: right;
             opacity: 75%;
             transition: opacity .25s ease-in-out;
         }
 
         .beach {
             background-image: url(../images/blogPics/cabotBeaches1.png);
+            background-position: right;
             opacity: 75%;
             transition: opacity .25s ease-in-out;
         }
 
         .slide {
             background-image: url(../images/blogPics/cabotWaterSlide1.png);
+            background-position: left;
             opacity: 75%;
             transition: opacity .25s ease-in-out;
         }
 
         .para{
             background-image: url(../images/blogPics/cabotParagliding1.png);
+            background-position: top right;
             opacity: 75%;
             transition: opacity .25s ease-in-out;
         }

@@ -83,7 +83,7 @@ nav form {
 
 nav form input {
   margin: 0.5rem 0;
-  padding: 0.8rem 0;
+  padding: 0.8rem;
   border: none;
   float: right;
 }
@@ -183,8 +183,8 @@ nav form #search {
 }
 
 .blog .articles .article {
-  height: 30rem;
-  width: 30rem;
+  height: 20rem;
+  width: 20rem;
   margin: auto;
   margin-top: 2rem;
   display: -webkit-box;
@@ -215,6 +215,7 @@ nav form #search {
 
 .blog .articles .dining {
   background-image: url(../images/blogPics/cabotDining1.png);
+  background-position: right;
   opacity: 75%;
   -webkit-transition: opacity .25s ease-in-out;
   transition: opacity .25s ease-in-out;
@@ -222,6 +223,7 @@ nav form #search {
 
 .blog .articles .beach {
   background-image: url(../images/blogPics/cabotBeaches1.png);
+  background-position: right;
   opacity: 75%;
   -webkit-transition: opacity .25s ease-in-out;
   transition: opacity .25s ease-in-out;
@@ -229,6 +231,7 @@ nav form #search {
 
 .blog .articles .slide {
   background-image: url(../images/blogPics/cabotWaterSlide1.png);
+  background-position: left;
   opacity: 75%;
   -webkit-transition: opacity .25s ease-in-out;
   transition: opacity .25s ease-in-out;
@@ -236,6 +239,7 @@ nav form #search {
 
 .blog .articles .para {
   background-image: url(../images/blogPics/cabotParagliding1.png);
+  background-position: top right;
   opacity: 75%;
   -webkit-transition: opacity .25s ease-in-out;
   transition: opacity .25s ease-in-out;
@@ -304,6 +308,7 @@ footer .footWrapper a {
 footer input {
   margin: 0.5rem 0;
   padding: 0.8rem 0;
+  width: 18rem;
   border: none;
 }
 
@@ -314,7 +319,7 @@ footer button {
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
   border: solid 1px rgba(0, 0, 0, 0.3);
-  width: 17.5rem;
+  width: 18rem;
   border-radius: 5px;
   padding: 0.5rem;
   cursor: pointer;
